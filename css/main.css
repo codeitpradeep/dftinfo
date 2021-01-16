@@ -151,7 +151,7 @@ p{
     height: 100vh;
     width: 100%;
     background-image: url(../img/pexels-kaboompics-com-6224.jpg);
-    opacity: .70;
+   /* opacity: .70; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@ p{
     height: 100vh;
     width: 100%;
     background-image: url(../img/pexels-lukas-590020.jpg);
-    opacity: .70;
+    /*opacity: .70;*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ p{
 .slide_img3{
     height: 100vh;
     width: 100%;
-    opacity: .70;
+    /* opacity: .70; */
     background-image: url(../img/pexels-photomix-company-106344.jpg);
     background-position: center;
     background-size: cover;
@@ -272,10 +272,10 @@ p{
 }@keyframes opac{from{opacity:0} to{opacity:1}}
 
 /* Portfolio , .allsection*/
-
+/*
 .portfolio {
     height: 100vh;
-}
+} */
 .bg_light{
     background: #f4f4f4;
     color: #333;
@@ -327,7 +327,7 @@ p{
     background-color: #FFFAF0;
     border: 1px solid #FFFAF0;
     margin-top: 20px;
-   
+    margin-bottom: 2rem;
     
 }
 
@@ -475,6 +475,47 @@ p{
 .prjtlinks{
     color: white;
 }
+.aboutme_container{
+    grid-gap: 2rem;
+}
+
+
+.contactcus_detail{
+    display: grid;
+    
+    column-gap: 1rem;
+}
+
+.contact_header{
+    font-family: sans-serif;
+    color: #5361FF;
+}
+.contact_text{
+    color: #2a3b47;
+}
+
+.contact_input{
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+    border: 1.5px solid #2a3b47;
+    font-size: 1rem;
+    margin-bottom:.8rem;
+    border-radius: .5rem;
+}
+
+.contact_button{
+    padding: .75rem 2.5rem;
+    background-color: #5361FF;
+    color: #fff;
+    margin-left: auto;
+    border-radius: 9px;
+    border: none;
+}
+
+
+
+
 
 @media screen and (min-width: 768px){
 
@@ -538,7 +579,8 @@ p{
         padding-bottom: 1.5rem;
         background-color: #FFFAF0;
         border: 1px solid #FFFAF0;
-        margin-top: 20px;   
+        margin-top: 20px; 
+        margin-bottom: 2rem;  
     }
 
     .skill__gridview{
@@ -556,13 +598,32 @@ p{
     .prjt__demogrid{
         display: grid;
         
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
         grid-column-gap: 50px ;
         grid-row-gap: 50px;
         justify-items: center;
         
     }
+
+    .bd_grid{
+        display: grid;
+        
+        grid-gap: 2rem;
+    }
+
+    .aboutme_container{
+        grid-template-columns: repeat(2 , 1fr);
+        justify-items: center;
+    }
+
+    .contact_form{
+        width: 300px;
+    }
+
+    
+
+   
    
 }
 @media screen and (min-width: 768px){
