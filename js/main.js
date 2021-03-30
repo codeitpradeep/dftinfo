@@ -102,3 +102,13 @@ wrkplce.addEventListener('click' , () => {
   
 
 });
+
+const all_input_fields = document.querySelectorAll('.contact_input');
+
+function success(){
+   alert("Added") 
+   for(let i=0; i<all_input_fields.length;i++){
+       console.log(all_input_fields[i].value = '');
+   }
+}
+
